@@ -13,6 +13,12 @@
 
 	<!-- CSS 
 	=============================================================== -->
+	<!-- Font Awesome 4.7.0  -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+	<!-- fancybox -->
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css">
+    
 	<!-- slick.css -->
 	<link rel="stylesheet" href="assets/slick/slick.css">
 	<link rel="stylesheet" href="assets/slick/slick-theme.css">
@@ -26,27 +32,40 @@
 
 	<!-- HEADER START -->
 	<header>
-		<div class="container-fluid">
+		<div class="container max-w-lager">
 			<div class="row">
-				<div class="max-w-lager">
-					<div class="col-12">
+				<div class="col-lg-12">
+					<div class="header-defautl">
 						<div class="logo-main">
 							<a href=""><img src="images/logo.png" alt=""></a>
 						</div>
 						<div class="header-top">
 							<div class="header-l">
-								<div class="">
+								<div style="display: inline-block;">
 									Shop in: 
 									<select>
 										<option value="USD">USD</option>
 										<option value="VN">VN</option>
 									</select>
 								</div>
+								<div style="display: inline-block;">
+									<a href="">Contact</a>
+								</div>
 							</div>
 							<div class="header-r">
 								<div>
 									<ul class="list-inline">
-										<li class="list-inline-item"><a href=""><img src="images/icon/menutop/search.png" alt=""></a></li>
+										<li class="list-inline-item main-search">
+											<!-- <a href=""><img src="images/icon/menutop/search.png" alt=""></a> -->
+											<div class="header_search_toggle desktop-view">
+												<form>
+													<div class="search-box">
+													<input class="input-text" type="text" placeholder="Search entire store here...">
+													<button class="search-btn"></button>
+													</div>
+												</form>
+											</div>
+										</li>
 										<li class="list-inline-item"><a href=""><img src="images/icon/menutop/user.png" alt=""></a></li>
 										<li class="list-inline-item"><a href=""><img src="images/icon/menutop/heart.png" alt=""></a></li>
 										<li class="list-inline-item"><a href=""><img src="images/icon/menutop/cart.png" alt=""></a></li>
@@ -54,30 +73,48 @@
 								</div>
 							</div>
 						</div>
-						<div class="menumain">
-							<ul class="list-inline text-uppercase">
-								<li class="list-inline-item"><a href="">Stories</a></li>
-								<li class="list-inline-item"><a href="">boutique</a></li>
-								<li class="list-inline-item"><a href="">brands</a></li>
-								<li class="list-inline-item"><a href="">Magazine</a></li>
-							</ul>
-						</div>
 					</div>
+				</div>
+				<div class="menumain">
+					<ul class="list-inline text-uppercase">
+						<li class="list-inline-item"><a href="">Stories</a></li>
+						<li class="list-inline-item"><a href="">boutique</a></li>
+						<li class="list-inline-item"><a href="">brands</a></li>
+						<li class="list-inline-item"><a href="">Magazine</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</header>
 	<!-- HEADER STOP -->
 
+	<!-- SLIDER MAIN START -->
+	<div class="slider-box">
+		<div class="sldiermain">
+			<a href=""><img src="images/slidermain/1.jpg" alt=""></a>
+			<a href=""><img src="images/slidermain/2.jpg" alt=""></a>
+			<a href=""><img src="images/slidermain/3.jpg" alt=""></a>
+		</div>
+		<div class="arrow sldierarrow">
+			<div class="left">
+				<img src="images/icon/arrow-left.png" alt="">
+			</div>
+			<div class="right">
+				<img src="images/icon/arrow-right.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- SLIDER MAIN STOP -->
+
 
 	<!-- PRODUCT TABS START -->
-	<div class="container">
+	<div class="container max-w-small">
 		<div class="row">
 			<div class="col-12">
-				<div class="title-default-line text-uppercase text-center">
+				<div class="title-default text-uppercase text-center">
 					<div class="sub">culture</div>
 					<h2>
-						Jean-Christophe Babin Talks About New Octo Retro Maserati Watches
+						Jean-Christophe Babin Talks About New Octo <br> Retro Maserati Watches
 					</h2>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
@@ -85,71 +122,78 @@
 				</div>
 			</div>
 			<div class="col-12">
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="culture-tab" data-toggle="tab" href="#culture" role="tab" aria-controls="culture" aria-selected="true">CULTURE</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="vintage-tab" data-toggle="tab" href="#vintage" role="tab" aria-controls="vintage" aria-selected="false">VINTAGE</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="technical-tab" data-toggle="tab" href="#technical" role="tab" aria-controls="technical" aria-selected="false">TECHNICAL</a>
-					</li>
-				</ul>
-				<div class="tab-content" id="myTabContent">
-					<div class="tab-pane fade show active" id="culture" role="tabpanel" aria-labelledby="culture-tab">
-						<div class="row">
-							<div class="col-md-4 col-sm-6">
-								<div class="post-item">
-									<div class="pic">
-										<img src="images/post-small/1.jpg" alt="">
-										<div class="caterogy"><a href="">culture</a></div>
-									</div>
-									<div class="title">
-										<h3>Swiss Watch Exports Jump Again; Latest Figures Showing Continuing Recovery...</h3>
-									</div>
-									<div class="bottom">
-										<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="post-item">
-									<div class="pic">
-										<img src="images/post-small/1.jpg" alt="">
-										<div class="caterogy"><a href="">culture</a></div>
-									</div>
-									<div class="title">
-										<h3>The Rolex “John Player Special” Paul Newman Daytona Ref. 6241</h3>
-									</div>
-									<div class="bottom">
-										<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
+				<div class="tabs-subtom">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="culture-tab" data-toggle="tab" href="#culture" role="tab" aria-controls="culture" aria-selected="true">CULTURE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="vintage-tab" data-toggle="tab" href="#vintage" role="tab" aria-controls="vintage" aria-selected="false">VINTAGE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="technical-tab" data-toggle="tab" href="#technical" role="tab" aria-controls="technical" aria-selected="false">TECHNICAL</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="culture" role="tabpanel" aria-labelledby="culture-tab">
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<div class="post-item">
+										<div class="pic">
+											<img src="images/tabs/1.jpg" alt="">
+											<div class="caterogy"><a href="">culture</a></div>
+											<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
+										</div>
+										<div class="title">
+											<h3>Swiss Watch Exports Jump Again; Latest Figures Showing Continuing Recovery...</h3>
+										</div>
+										<div class="bottom">
+											<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="post-item">
-									<div class="pic">
-										<img src="images/post-small/1.jpg" alt="">
-										<div class="caterogy"><a href="">culture</a></div>
+								<div class="col-md-4 col-sm-6">
+									<div class="post-item">
+										<div class="pic">
+											<img src="images/tabs/2.jpg" alt="">
+											<div class="caterogy"><a href="">culture</a></div>
+											<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
+										</div>
+										<div class="title">
+											<h3>The Rolex “John Player Special” Paul Newman Daytona Ref. 6241</h3>
+										</div>
+										<div class="bottom">
+											<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
+										</div>
 									</div>
-									<div class="title">
-										<h3>Memories of Paul Newman: Racing Buddy, Paul White</h3>
-									</div>
-									<div class="bottom">
-										<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="post-item">
+										<div class="pic">
+											<img src="images/tabs/3.jpg" alt="">
+											<div class="caterogy"><a href="">culture</a></div>
+											<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
+										</div>
+										<div class="title">
+											<h3>Memories of Paul Newman: Racing Buddy, Paul White</h3>
+										</div>
+										<div class="bottom">
+											<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="tab-pane fade" id="vintage" role="tabpanel" aria-labelledby="vintage-tab">Update Vintage</div>
+						<div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">Update Technical</div>
 					</div>
-					<div class="tab-pane fade" id="vintage" role="tabpanel" aria-labelledby="vintage-tab">...</div>
-					<div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">...</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- PRODUCT TABS STOP -->
+
+
 
 
 	<!-- NEW ARRIVALS START  -->
@@ -160,7 +204,7 @@
 					<h3>New Arrivals</h3>
 				</div>
 				<div class="product-slider-box">
-					<div class="product-slick">
+					<div class="product-list product-slick-1">
 						<!-- 1 -->
 						<div class="product-item">
 							<div class="pic">
@@ -298,12 +342,12 @@
 							<div class="price">$250</div>
 						</div>
 					</div>
-					<div class="product-arrow">
+					<div class="arrow arrow-1">
 						<div class="left">
-							<img src="images/" alt="">
+							<img src="images/icon/arrow-left.png" alt="">
 						</div>
 						<div class="right">
-							<img src="images/" alt="">
+							<img src="images/icon/arrow-right.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -324,9 +368,10 @@
 					<div class="pic">
 						<img src="images/post-small/1.jpg" alt="">
 						<div class="caterogy">culture</div>
+						<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
 					</div>
 					<div class="title">
-						<h3>Swiss Watch Exports Jump Again; Latest Figures Showing Continuing Recovery...</h3>
+						<a href=""> <h3>Swiss Watch Exports Jump Again; Latest Figures Showing Continuing Recovery...</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
@@ -339,9 +384,10 @@
 					<div class="pic">
 						<img src="images/post-small/2.jpg" alt="">
 						<div class="caterogy"><a href="">editor’s pick</a></div>
+						<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
 					</div>
 					<div class="title">
-						<h3>The Rolex “John Player Special” Paul Newman Daytona Ref. 6241</h3>
+						<a href=""> <h3>The Rolex “John Player Special” Paul Newman Daytona Ref. 6241</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
@@ -354,9 +400,10 @@
 					<div class="pic">
 						<img src="images/post-small/3.jpg" alt="">
 						<div class="caterogy">culture</div>
+						<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
 					</div>
 					<div class="title">
-						<h3>Memories of Paul Newman: Racing Buddy, Paul White</h3>
+						<a href=""> <h3>Memories of Paul Newman: Racing Buddy, Paul White</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
@@ -369,9 +416,10 @@
 					<div class="pic">
 						<img src="images/post-small/4.jpg" alt="">
 						<div class="caterogy">culture</div>
+						<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
 					</div>
 					<div class="title">
-						<h3>Swiss Watch Exports Jump Again; Latest Figures Showing Continuing Recovery</h3>
+						<a href=""> <h3>Swiss Watch Exports Jump Again; Latest Figures Showing Continuing Recovery</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
@@ -384,9 +432,10 @@
 					<div class="pic">
 						<img src="images/post-small/5.jpg" alt="">
 						<div class="caterogy">editor’s pick</div>
+						<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
 					</div>
 					<div class="title">
-						<h3>The Rolex “John Player Special” Paul Newman Daytona Ref. 6241</h3>
+						<a href=""> <h3>The Rolex “John Player Special” Paul Newman Daytona Ref. 6241</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
@@ -399,9 +448,10 @@
 					<div class="pic">
 						<img src="images/post-small/6.jpg" alt="">
 						<div class="caterogy">culture</div>
+						<div class="overly-btn"><a href="#" class="link-custom link-black">Read more</a></div>
 					</div>
 					<div class="title">
-						<h3>Memories of Paul Newman: Racing Buddy, Paul White</h3>
+						<a href=""> <h3>Memories of Paul Newman: Racing Buddy, Paul White</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
@@ -417,14 +467,14 @@
 	<!-- POST STOP -->
 
 	<!-- PRODUCT SLIDER START  -->
-	<div class="container">
+	<div class="container max-w-small">
 		<div class="row">
 			<div class="col">
 				<div class="title-default-line text-uppercase text-center">
 					<h3>best seller</h3>
 				</div>
 				<div class="product-slider-box">
-					<div class="product-slick">
+					<div class="product-list product-slick-2">
 						<!-- 1 -->
 						<div class="product-item">
 							<div class="pic">
@@ -562,12 +612,12 @@
 							<div class="price">$250</div>
 						</div>
 					</div>
-					<div class="product-arrow">
+					<div class="arrow arrow-2">
 						<div class="left">
-							<img src="images/" alt="">
+							<img src="images/icon/arrow-left.png" alt="">
 						</div>
 						<div class="right">
-							<img src="images/" alt="">
+							<img src="images/icon/arrow-right.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -586,18 +636,20 @@
 						<img src="images/post/main/1.jpg" alt="">
 					</div>
 					<div class="icon">
-						<img src="images/icon/play.png" alt="">
+						<a data-fancybox href="https://www.youtube.com/watch?v=hCRR6EN6zY4">
+							<img src="images/icon/play.png" alt="">
+						</a>
 					</div>
 				</div>
 				<div class="post">
 					<div class="title">
-						<h3>Unveiling the 2017 Montblanc Timewalker Collection in Singapore</h3>
+						<a href=""> <h3>Unveiling the 2017 Montblanc Timewalker Collection in Singapore</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
 					</div>
 					<div class="link">
-						<a href="" class="link-custom link-white">watch video</a>
+						<a data-fancybox href="https://www.youtube.com/watch?v=hCRR6EN6zY4" class="link-custom link-white">watch video</a>
 					</div>
 				</div>
 			</div>
@@ -608,18 +660,20 @@
 						<img src="images/post/main/2.jpg" alt="">
 					</div>
 					<div class="icon">
-						<img src="images/icon/play.png" alt="">
+						<a data-fancybox href="https://www.youtube.com/watch?v=mnBxrtKKui8">
+							<img src="images/icon/play.png" alt="">
+						</a>						
 					</div>
 				</div>
 				<div class="post">
 					<div class="title">
-						<h3>Revolution Talks Restoration with Patek Philippe’s Christian Lass</h3>
+						<a href=""> <h3>Revolution Talks Restoration with Patek Philippe’s Christian Lass</h3></a>
 					</div>
 					<div class="bottom">
 						<span class="date">October 26, 2017</span>·<span class="author">Bob Ridley</span>
 					</div>
 					<div class="link">
-						<a href="" class="link-custom link-white">watch video</a>
+						<a data-fancybox href="https://www.youtube.com/watch?v=mnBxrtKKui8" class="link-custom link-white">watch video</a>
 					</div>
 				</div>
 				
@@ -639,7 +693,7 @@
 				<div class="title-default-line text-uppercase text-center">
 					<h3>brands</h3>
 				</div>
-				<div class="">
+				<div class="logo-list">
 					<ul>
 						<li class="list-inline-item"><a href=""><img src="images/brands/1.png" alt=""></a></li>
 						<li class="list-inline-item"><a href=""><img src="images/brands/2.png" alt=""></a></li>
@@ -675,81 +729,97 @@
 
 	<!-- FOOTER START -->
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-3">
-					<div class="footer-col">
-						<div class="title text-uppercase">
-							<h3>company</h3>
-						</div>
-						<div class="content">
-							<ul class="list-unstyled">
-								<li><a href="">UK 0800 111 4116</a></li>
-								<li><a href="aboutus.html">About Us</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="footer-col">
-						<div class="title text-uppercase">
-							<h3>Quick Links</h3>
-						</div>
-						<div class="content">
-							<ul class="list-unstyled">
-								<li><a href="">Culture</a></li>
-								<li><a href="">Vintage</a></li>
-								<li><a href="">Technical</a></li>
-								<li><a href="">Videos</a></li>
-								<li><a href="">Boutique</a></li>
-								<li><a href="">Brands</a></li>
-								<li><a href="">Magazine</a></li>
-							</ul>
+		<div class="footer-top">
+			<div class="container max-w-small">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-col">
+							<span class="opener plus">
+								<i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+							</span>
+							<div class="title text-uppercase">
+								<h3>company</h3>
+							</div>
+							<div class="content">
+								<ul class="list-unstyled">
+									<li><a href="">UK 0800 111 4116</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-3">
-					<div class="footer-col">
-						<div class="title text-uppercase">
-							<h3>customer services</h3>
-						</div>
-						<div class="content">
-							<ul class="list-unstyled">
-								<li><a href="">Returns & Exchanges</a></li>
-								<li><a href="">Shipping Terms</a></li>
-								<li><a href="">Payment Policy</a></li>
-								<li><a href="">Warranty & Repair</a></li>
-							</ul>
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-col">
+							<span class="opener plus">
+								<i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+							</span>
+							<div class="title text-uppercase">
+								<h3>Quick Links</h3>
+							</div>
+							<div class="content">
+								<ul class="list-unstyled">
+									<li><a href="">Culture</a></li>
+									<li><a href="">Vintage</a></li>
+									<li><a href="">Technical</a></li>
+									<li><a href="">Videos</a></li>
+									<li><a href="">Boutique</a></li>
+									<li><a href="">Brands</a></li>
+									<li><a href="">Magazine</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-3">
-					<div class="footer-col">
-						<div class="title text-uppercase">
-							<h3>SECURE SHOPPING</h3>
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-col">
+							<span class="opener plus">
+								<i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+							</span>
+							<div class="title text-uppercase">
+								<h3>customer services</h3>
+							</div>
+							<div class="content">
+								<ul class="list-unstyled">
+									<li><a href="">Returns & Exchanges</a></li>
+									<li><a href="">Shipping Terms</a></li>
+									<li><a href="">Payment Policy</a></li>
+									<li><a href="">Warranty & Repair</a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="content">
-							<ul class="list-unstyled">
-								<li><a href="">Privacy Policy</a></li>
-								<li><a href="">Cookie Policy</a></li>
-								<li><a href="">Terms and Conditions</a></li>
-							</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-col">
+							<span class="opener plus">
+								<i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+							</span>
+							<div class="title text-uppercase">
+								<h3>SECURE SHOPPING</h3>
+							</div>
+							<div class="content">
+								<ul class="list-unstyled">
+									<li><a href="">Privacy Policy</a></li>
+									<li><a href="">Cookie Policy</a></li>
+									<li><a href="">Terms and Conditions</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="payment-icon text-center">
-			<ul class="list-inline">
-				<li class="list-inline-item"><a href=""><img src="images/payment/visa.png" alt=""></a></li>
-				<li class="list-inline-item"><a href=""><img src="images/payment/mastercart.png" alt=""></a></li>
-				<li class="list-inline-item"><a href=""><img src="images/payment/pay.png" alt=""></a></li>
-			</ul>
-		</div>
-		<div class="copyright text-center">
-			Copyright © 2007–2017, Revolution. All right reserved.
+		<div class="payment">
+			<div class="payment-icon text-center">
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href=""><img src="images/payment/visa.png" alt=""></a></li>
+					<li class="list-inline-item"><a href=""><img src="images/payment/mastercart.png" alt=""></a></li>
+					<li class="list-inline-item"><a href=""><img src="images/payment/pay.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="copyright text-center" >
+				Copyright © 2007–2017, Revolution. All right reserved.
+			</div>
 		</div>
 	</footer>
 	<!-- FOOTER STOP -->
@@ -757,15 +827,20 @@
 
 	<!-- JS 
 	=============================================================== -->
-	<script src="js/jquery.min.js"></script>
-	<!-- slick.min.js -->
-	<script src="assets/slick/slick.min.js"></script>
-	<script src="js/main.js"></script>
+	
+	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	<script src="js/jquery.min.js"></script>
+	<!-- fancybox -->	
+	<script src="assets/fancybox/jquery.fancybox.min.js"></script>
+	<!-- slick.min.js -->
+	<script src="assets/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
   
 </body>
 </html>
